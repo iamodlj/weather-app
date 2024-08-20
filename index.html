@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <div class="city-info">
+                <h2 id="cityName"></h2>
+                <p id="countryState"></p>
+                <img id="countryFlag" src="" alt="Country Flag">
+                <span id="countryCode"></span>
+            </div>
+
+            <div class="weather-details">
+                <p id="weatherCondition"></p>
+                <p id="temperature"></p>
+                <p id="time"></p>
+            </div>
+
+            <p id="errorMessage" style="color: red;"></p> 
+        </div>
+
+        <div class="dark-mode-toggle">
+            <label for="darkModeSwitch">Dark Mode:</label>
+            <input type="checkbox" id="darkModeSwitch">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

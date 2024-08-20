@@ -1,0 +1,76 @@
+/* Basic styling, layout, and color scheme */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background */
+    color: #333;
+    transition: background-color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Example button color */
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.city-info {
+    margin-bottom: 20px;
+}
+
+.city-info img {
+    width: 32px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.weather-details p {
+    margin: 5px 0;
+}
+
+.dark-mode-toggle {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .container {
+    background-color: #222;
+}
+
+/* ... (adjust other colors as needed for dark mode) */
