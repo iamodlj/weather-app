@@ -1,21 +1,19 @@
 /* Basic styling, layout, and color scheme */
 body {
     font-family: sans-serif;
-    display: flex;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Light background */
-    color: #333;
-    transition: background-color 0.3s ease; /* Smooth transition for dark mode */
-}
+   }
 
 .container {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .search-bar {
@@ -40,7 +38,7 @@ body {
 }
 
 .weather-info {
-    text-align: center;
+    text-align: left;
 }
 
 .city-info {
@@ -51,7 +49,7 @@ body {
     width: 32px;
     height: auto;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 1px;
 }
 
 .weather-details p {
@@ -65,12 +63,43 @@ body {
 
 /* Dark mode styles */
 body.dark-mode {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: #270338;
+    color: #ffffff;
 }
 
 .dark-mode .container {
-    background-color: #222;
+    background-color: #0b0101;
 }
 
-/* ... (adjust other colors as needed for dark mode) */
+/*footer section */
+.site-footer {
+    padding: 20px;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    color: #ffffff;
+}
+
+.site-footer p {
+    font-size: 1rem;
+    margin: 0;
+    background-clip: text;
+    animation: colorShift 10s ease infinite;
+}
+
+
+@keyframes colorShift {
+    0% { color: #FF0000; }
+    10% { color: #FF9A00; }
+    20% { color: #D0DE21; }
+    30% { color: #4FDC4A; }
+    40% { color: #3FDAE8; }
+    50% { color: #2F81EE; }
+    60% { color: #5F15F2; }
+    70% { color: #BA0CF8; }
+    80% { color: #FB07D9; }
+    90% { color: #FF0000; }
+    100% { color: #FF0000; }
+}
