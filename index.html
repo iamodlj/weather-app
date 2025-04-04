@@ -5,42 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
     <div class="container">
         <h1>Weather App</h1>
 
         <div class="search-bar">
-            <input type="text" id="cityInput" placeholder="Enter city name">
-            <button id="searchButton">Search</button>
+            <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off">
+            <button id="searchButton">
+                <span>Search</span>
+            </button>
         </div>
 
         <div class="weather-info">
             <div class="city-info">
-                <h2 id="cityName"></h2>
-                <p id="countryState"></p>
-                <img id="countryFlag" src="" alt="Country Flag">
-                <span id="countryCode"></span>
+                <h2 id="cityName">-</h2>
+                <p id="countryState">-</p>
+                <div class="flag-container">
+                    <img id="countryFlag" src="" alt="Country Flag">
+                    <span id="countryCode"></span>
+                </div>
             </div>
 
             <div class="weather-details">
-                <p id="weatherCondition"></p>
-                <p id="temperature"></p>
-                <p id="time"></p>
+                <p id="weatherCondition">-</p>
+                <p id="temperature">-</p>
+                <p id="time">-</p>
             </div>
 
-            <p id="errorMessage" style="color: red;"></p> 
+            <p id="errorMessage" class="error-message"></p>
         </div>
 
         <div class="dark-mode-toggle">
-            <label for="darkModeSwitch">Dark Mode:</label>
+            <label for="darkModeSwitch">Dark Mode</label>
             <input type="checkbox" id="darkModeSwitch">
         </div>
     </div>
 
     <footer class="site-footer">
-        <p> know your weather condition </p>
+        <p>Know your weather condition</p>
+        <div class="developer-info">
+            <p>Developed by Abraham Sackey Ohene Gyan (ASOG Dev.) &copy; 2025</p>
+            <div class="social-links">
+                <a href="https://github.com/iamodlj/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/iam_odlj" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://portfolio-7tlevfo8g-iamodljs-projects.vercel.app/" target="_blank" title="Portfolio"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
     </footer>
     
     <script src="script.js"></script>
