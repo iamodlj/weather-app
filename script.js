@@ -10,7 +10,7 @@ const time = document.getElementById('time');
 const darkModeSwitch = document.getElementById('darkModeSwitch');
 const errorMessage = document.getElementById('errorMessage');
 
-const apiKey = '8c28dbd41bc1aeca9aee6c99d7ebfe05'; // Updated API key
+const apiKey = '8c28dbd41bc1aeca9aee6c99d7ebfe05'; //  API key
 const apiEndpoint = 'https://api.openweathermap.org/data/2.5/weather'; // Specified endpoint
 
 searchButton.addEventListener('click', fetchWeatherData);
@@ -89,6 +89,5 @@ function toggleDarkMode() {
 
 // Function to update the background (placeholder, you'll need to implement this)
 function updateBackground(weatherCondition) {
-    // ... Logic to change background based on weatherCondition
-    // You can use CSS classes, images, or even generate code snippets dynamically
+   
 }
