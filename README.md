@@ -82,7 +82,7 @@ This `README.md` gives an overview of your project, how to run it, and details a
 ## Developed by Abraham Sackey Ohene Gyan (https://github.com/iamodlj)
 
 ## Portfolio : 
-[iamodlj.github.io/portfolio/](https://iamodlj.github.io/portfolio/)
+https://portfolio-rust-mu-93.vercel.app/
 
 
 ## Remember to:
